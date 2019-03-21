@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Oppgave 7-8</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Oppgave 7</h3>
+
+    <script>
+      const bilde = prompt("Velg et bilde");
+      const bredde = prompt("Hvilken bredde skal bilde være?");
+      const tittel = prompt("Hva skal bilde hete?");
+
+      document.write(`
+      <img src="${bilde}" style="width: ${bredde}px" title="${tittel}"> 
+      `);
+    </script>
+
+    <h3>Oppgave 8</h3>
+
+    <script>
+      const backgroundcolor = prompt("Skriv inn bakgrunnsfarge")
+
+      document.write(`
+      
+      <style>
+      body{
+        background-color: ${backgroundcolor};
+      }
+        </style>
+      `);
+    </script>
+</body>
+</html>

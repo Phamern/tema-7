@@ -1,0 +1,27 @@
+:root {
+  --font: 'avenir', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font);
+  font-weight: bold; 
+}
+ p {
+   font-family: var(--font);
+   font-weight: 100;
+ }
+
+ table, th, td {
+  font-family: var(--font);
+  border: 1px solid black;
+  text-align: left;
+  padding: 20px;
+ }
+
+ table {
+   border-collapse: collapse;
+ }
+
+ th:nth-child(3) {
+   border: 2px solid black;
+ }

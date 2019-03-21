@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Oppgave 9-10</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h3>Oppgave 9</h3>
+
+  <p>poengsum = let</p>
+  <p>PI = const</p>
+  <p>Et html-element = const</p>
+  <p>Fornavn = const</p>
+  <p>posisjon til en ball = let</p>
+
+  <h3>Oppgave 10</h3>
+
+  <script>
+    const tall1 = prompt("Skriv et tall");
+    const tall2 = prompt("Skriv et tall til");
+
+    const t1 = Number(tall1)
+    const t2 = Number(tall2)
+
+    document.write(t1 * t2);
+  </script>
+  <h3>Oppgave 11</h3>
+
+  <script>
+    const pris = Number(prompt("Pris uten moms"));
+    const moms = pris * 0.25;
+
+    if (pris > 350) {
+      document.write(`
+   
+    <table>
+      <tr>
+      <th>Pris uten moms</th>
+      <th >${pris}</th>
+        </tr>
+        <tr>
+      <th>Moms</th>
+      <th>${moms}</th>
+        </tr>
+        <tr>
+      <th>Pris med moms </th>
+      <th>${pris + moms}</th>
+        </tr>
+      </table>
+
+   `);
+    } else {
+      document.write(`
+   
+   <table>
+     <tr>
+     <th>Pris uten moms</th>
+     <th >${pris}</th>
+       </tr>
+       <tr>
+     <th>Moms</th>
+     <th>Ingen moms</th>
+       </tr>
+       <tr>
+     <th>Pris med moms </th>
+     <th>${pris}</th>
+       </tr>
+     </table>
+
+  `);
+    }
+  </script>
+</body>
+
+</html>
