@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background-color: #a53d5c;
+  font-family: 'avenir', sans-serif;
+  padding: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 10px;
+}
+
+@keyframes fallNed {
+  to {
+    transform: translateY(0);
+  }
+
+}
+
+main div {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #fc5425;
+  transform: translateY(-800px);
+  animation-name: fallNed;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+
+}
