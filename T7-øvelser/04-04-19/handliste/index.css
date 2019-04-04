@@ -1,0 +1,19 @@
+main {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+#handleliste article {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+#handleliste article:nth-child(odd) {
+  background-color: lightblue;
+}
+
+#handleliste article div{
+  padding: 7px;
+}
+
