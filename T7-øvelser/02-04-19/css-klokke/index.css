@@ -1,0 +1,14 @@
+body { 
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #b95252;
+  color: #ffffff;
+  font-family: 'Avenir', sans-serif;
+  font-size: 9vw;
+  letter-spacing: 0.5vw;
+  font-weight: 900;
+
+}

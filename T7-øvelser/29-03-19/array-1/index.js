@@ -8,6 +8,7 @@ document.write("<br>");
 
 //Det dukker opp en ny influencer på scenen
 //Push er den mest vanlige. Men det finnes flere måter. 
+
 bloggere.push("Pilotfrue");
 
 bloggere.unshift("Jon Arne Riise");

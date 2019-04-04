@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  background-color: #161414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+}
+
+#klokka {
+  width: 70vh;
+  height: 70vh;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#sekundviser {
+  width: 5px;
+  height: 25vh;
+  background-color: #161414;
+  position: absolute;
+  bottom: 50%;
+  transform-origin: center bottom;
+}
+
+#minuttviser {
+  width: 5px;
+  height: 32vh;
+  background-color: #161414;
+  position: absolute;
+  bottom: 50%;
+  transform-origin: center bottom;
+}

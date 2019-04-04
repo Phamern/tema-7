@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Klasseliste</title>
+  <style>
+  .firkanten {
+    padding: 40px;
+    background-color: grey;
+    margin-top: 20px;
+  }
+
+  .gul {
+    background-color: yellow;
+    padding: 50px;
+    transition: 1s;
+  }
+
+  .blue {
+    background-color: blue;
+    padding: 50px;
+  }
+
+  </style>
+</head>
+<body>
+
+  <button id="knappen">Bytt farge</button>
+  <div class="firkanten"></div>
+
+  <script>
+    
+    const knappen = document.querySelector("#knappen");
+    const firkanten = document.querySelector(".firkanten");
+
+    // () og => definerer en funksjon
+    // => arrow function. Samme som om man skulle laget en add.Eventlistener.
+    // gjør koden kjappere
+    knappen.onclick = () => {
+      //endrer fargen til gul
+      //firkanten.classList.add("gul");
+
+      //firkanten.classList.remove("firkanten");
+
+      //slår av og på funksjonen som endrer fargen
+      firkanten.classList.toggle("gul");
+
+    }
+    
+
+  </script>
+  
+</body>
+</html>
