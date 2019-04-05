@@ -1,0 +1,12 @@
+#starCanvas {
+  border: 1px solid black;
+}
+svg {
+  position: absolute;
+}
+
+polygon {
+  stroke: black;
+  stroke-width: 3px;
+  fill: transparent;
+}

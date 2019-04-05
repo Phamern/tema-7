@@ -1,0 +1,38 @@
+body {
+  background-color: #252525;
+  margin: 0;
+  padding: 10px;
+}
+
+#knapper {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: stretch;
+  grid-gap: 8px;
+}
+
+#knapper div {
+  text-align: center;
+  cursor: pointer;
+  background-color: rgb(199, 131, 4);
+  padding: 15px;
+  color: white;
+  font-family: 'Avenir', sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 8px;
+}
+
+main img {
+  width: 100%;
+}
+
+main a, p {
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Avenir', sans-serif;
+  color: white;
+}
