@@ -9,11 +9,11 @@ body {
 .menu {
   cursor: pointer;
   top: 4rem;
-  left: 4rem;
+  left: 6rem;
   position: absolute;
   width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  height: 27px;
+  border-radius: 0%;
   background-color: rgba(51, 51, 51, 0.24);
   transition: 1.2s;
   z-index: 10;
@@ -25,6 +25,7 @@ body {
   transform: rotate(45deg);
   background-color:  rgba(54, 54, 54, 0.466);
   transition: 1s;
+  height: 30px;
 }
 
 .menu.visible:hover {
