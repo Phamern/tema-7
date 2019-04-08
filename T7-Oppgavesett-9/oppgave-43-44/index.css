@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  background-color: rgb(27, 27, 27);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: "kunt", sans-serif;
+  color: rgb(235, 235, 235);
+  font-size: 20rem;
+}
+
+header {
+  width: 100vw;
+  height: 100px;
+  top: -150px;
+  background-color: rgb(27, 27, 27);
+  box-shadow: 0 2px 15px 1px rgb(15, 15, 15);
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+header a {
+  text-decoration: none;
+  font-family: "kunt", sans-serif;
+  color: rgb(223, 223, 223);
+  font-size: 1.5rem;
+  transition: 0.5s;
+  font-family: 'kunt', sans-serif;
+}
+
+header a:hover {
+  color: rgb(122, 122, 122);
+}
+
+header.visible {
+  width: 100vw;
+  height: 100px;
+  top: 0;
+}
+
+.fas.fa-link {
+  font-size: 1rem;
+}

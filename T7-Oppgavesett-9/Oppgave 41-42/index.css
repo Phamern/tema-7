@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(37, 37, 37);
+}
+
+#back, #next {
+  width: 2%;
+  height: 2%;
+  padding: 30px;
+  cursor: pointer;
+}
