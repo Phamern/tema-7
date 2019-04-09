@@ -1,8 +1,8 @@
-function setup () {
-  createCanvas (500, 500);
+function setup() {
+  createCanvas(500, 500);
 }
 
-function draw () {
+function draw() {
   background("grey");
 
   stroke("black");
@@ -14,6 +14,4 @@ function draw () {
   strokeWeight("10");
   stroke("orange");
   ellipse(250, 250, 200);
-
-  
 }

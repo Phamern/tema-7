@@ -6,7 +6,8 @@ body {
   background-color: rgb(37, 37, 37);
 }
 
-#back, #next {
+#back,
+#next {
   width: 2%;
   height: 2%;
   padding: 30px;

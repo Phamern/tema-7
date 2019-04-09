@@ -1,4 +1,4 @@
-function setup (){
+function setup() {
   createCanvas(innerWidth, innerHeight);
 }
 
@@ -9,30 +9,23 @@ const ball = {
   xretning: 1,
   farge: "red",
   xfart: 5
-}
+};
 
-function tegnBall(){
+function tegnBall() {
+  fill(ball.farge);
+  circle(ball.x, ball.y, ball.r);
 
-fill(ball.farge)  
-circle( ball.x, ball.y, ball.r);
+  ball.x += ball.xfart * ball.xretning;
+  ball.r += 0.5;
 
-ball.x += ball.xfart * ball.xretning;
-ball.r += 0.5;
-
-if (ball.x >= innerWidth + ball.r)  {
+  if (ball.x >= innerWidth + ball.r) {
     ball.x = 70;
     ball.r = 10;
+  }
 }
-
-}
-
-
-
 
 function draw() {
-
   background("pink");
 
-  tegnBall()
-
+  tegnBall();
 }

@@ -2,9 +2,7 @@
 const tilfeldigTall = Math.round(Math.random() * 100 + 1);
 
 if (tilfeldigTall <= 20) {
-
   document.write(tilfeldigTall + " is a small number");
-
 } else if (tilfeldigTall <= 80) {
   document.write(tilfeldigTall + " is a medium big number");
 } else {
@@ -25,17 +23,14 @@ else {
   document.write(tall + " is a big number");
 }*/
 
-const tall = Math.floor(Math.random() * 3) ;
-switch (tall){
-
+const tall = Math.floor(Math.random() * 3);
+switch (tall) {
   case 0:
-  console.log(tall + " is a small number");
-  break;
-  case 1: 
-  console.log(tall + " is a medium number");
-  break;
+    console.log(tall + " is a small number");
+    break;
+  case 1:
+    console.log(tall + " is a medium number");
+    break;
   case 2:
-  console.log(tall + " is a big number");
-
-
+    console.log(tall + " is a big number");
 }

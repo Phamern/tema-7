@@ -1,16 +1,14 @@
-//Tegner en SVG fil med HTML tags. evt.clientX og Y definerer posisjonen på SVG stjernen når man klikker. 
+//Tegner en SVG fil med HTML tags. evt.clientX og Y definerer posisjonen på SVG stjernen når man klikker.
 const main = document.querySelector("main");
 
-
-document.onclick = (evt) => {
-  
+document.onclick = evt => {
   main.innerHTML += `
-    <svg height="210" width ="500" style="left: ${evt.clientX - 98}px; top:${evt.clientY - 105}px;">
+    <svg height="210" width ="500" style="left: ${evt.clientX -
+      98}px; top:${evt.clientY - 105}px;">
       <polygon id="stjerne" points="100,10 40,198, 190,78 10,78 160,198"></polygon>
     </svg>
   `;
-}
-
+};
 
 //TESTER MED CTX
 /*const starCanvas = document.querySelector("#starCanvas");

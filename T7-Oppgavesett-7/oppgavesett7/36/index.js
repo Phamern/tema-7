@@ -15,7 +15,7 @@ const ball = {
   xretning: 1,
   yretning: 1,
   farge: "#2643c5"
-}
+};
 
 function tegnBall() {
   fill(ball.farge);
@@ -24,24 +24,24 @@ function tegnBall() {
   ball.x += ball.xretning * ball.xfart;
   ball.y += ball.yretning * ball.yfart;
 
-  if(ball.x >= bredde) {
+  if (ball.x >= bredde) {
     ball.xretning = -1;
   }
 
-  if(ball.y >= hoyde) {
+  if (ball.y >= hoyde) {
     ball.yretning = -1;
   }
 
-  if(ball.x <= 0) {
+  if (ball.x <= 0) {
     ball.xretning = 1;
   }
 
-  if(ball.y === 0) {
+  if (ball.y === 0) {
     ball.yretning = 1;
   }
 }
 
-function setup(){
+function setup() {
   createCanvas(bredde, hoyde);
 }
 function draw() {
@@ -49,9 +49,4 @@ function draw() {
   rect(0, 0, bredde, hoyde);
   background("yellow");
   tegnBall();
-  
-
 }
-
-
-

@@ -1,41 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Oppgave 3.5-3</title>
-</head>
-<body>
-  
-<input type="text" id="tittel" placeholder="Tittel">
-<input type="url" id="bilde" placeholder="Bilde_url">
-<button id="bt"></button>
-<section id="nyheter"></section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Oppgave 3.5-3</title>
+  </head>
+  <body>
+    <input type="text" id="tittel" placeholder="Tittel" />
+    <input type="url" id="bilde" placeholder="Bilde_url" />
+    <button id="bt"></button>
+    <section id="nyheter"></section>
 
-<script>
+    <script>
+      const tittel = document.getElementById("tittel");
+      const bilde = document.getElementById("bilde");
+      const bt = document.getElementById("bt");
+      const nyheter = document.getElementById("nyheter");
 
-const tittel = document.getElementById("tittel");
-const bilde = document.getElementById("bilde");
-const bt = document.getElementById("bt");
-const nyheter = document.getElementById("nyheter");
-
-function artikkel() {
-
-  nyheter.innerHTML += `
+      function artikkel() {
+        nyheter.innerHTML += `
     <article>
         <h1> ${tittel.value} </h1>
         <img src="${bilde.value}">
 
     </article>
   `;
+      }
 
-}
-
-bt.addEventListener("click", artikkel);
-
-
-
-</script>
-</body>
+      bt.addEventListener("click", artikkel);
+    </script>
+  </body>
 </html>

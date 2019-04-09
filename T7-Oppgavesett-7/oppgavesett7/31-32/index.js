@@ -34,9 +34,7 @@ let nr = 0;*/
 
 function draw() {*/
 
-
-
-  /*while (nr <= antall) {
+/*while (nr <= antall) {
     noStroke();
     fill(sirkel.farge);
     circle(sirkel.x * 60, sirkel.y, sirkel.r);
@@ -112,36 +110,32 @@ function draw() {
     }
   }*/
 
-  function setup() {
-    createCanvas(innerWidth, innerHeight);
-    background("black");
-    noLoop();
+function setup() {
+  createCanvas(innerWidth, innerHeight);
+  background("black");
+  noLoop();
+}
+
+let antall = 0;
+
+const sirkel = {
+  x: 40,
+  y: 40,
+  r: 15
+};
+
+function draw() {
+  while (antall <= innerWidth) {
+    noStroke();
+    circle(sirkel.x, sirkel.y, sirkel.r);
+
+    sirkel.x += 50;
+
+    if (sirkel.x >= innerWidth) {
+      sirkel.x = 40;
+      sirkel.y += 40;
+      fill(255 - sirkel.y / 3);
+      antall++;
+    }
   }
-
-  let antall = 0;
-
-  const sirkel = {
-    x: 40,
-    y: 40,
-    r: 15,
-  }
-  
-  function draw(){
-
-    while(antall <= innerWidth) {
-      noStroke();
-      circle(sirkel.x, sirkel.y, sirkel.r);
-
-      sirkel.x += 50;
-
-      if(sirkel.x >= innerWidth) {
-        sirkel.x = 40;
-        sirkel.y += 40;
-        fill(255 - (sirkel.y / 3));
-        antall++;
-      }
-      
-
-  }
-  
 }

@@ -40,12 +40,12 @@ imgPile.onmouseout = () => {
 const all = document.querySelectorAll("#imgPile img");
 
 imgPile.onmouseover = () => {
-  for(const img of all) {
+  for (const img of all) {
     img.classList.add("move");
   }
-}
- imgPile.onmouseout = () => {
-   for(const img of alle) {
-     img.classList.remove("move");
-   }
- }
+};
+imgPile.onmouseout = () => {
+  for (const img of alle) {
+    img.classList.remove("move");
+  }
+};

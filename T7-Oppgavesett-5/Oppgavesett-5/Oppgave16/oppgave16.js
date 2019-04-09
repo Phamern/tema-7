@@ -1,10 +1,10 @@
 //Oppgave 16
 
 function setup() {
-    createCanvas(200, 200);
+  createCanvas(200, 200);
 }
 
-function draw(){
+function draw() {
   noStroke();
   fill(00, 00, 255, 100);
   circle(100, 100, 50);

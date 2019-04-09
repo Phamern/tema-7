@@ -1,11 +1,11 @@
-body { 
+body {
   margin: 0;
   overflow: hidden;
 }
 
-#scoreH{
+#scoreH {
   color: white;
-  font-family: 'avenir', sans-serif;
+  font-family: "avenir", sans-serif;
   position: absolute;
   left: 300px;
   top: 15%;
@@ -14,9 +14,9 @@ body {
   font-size: 30rem;
 }
 
-#scoreV{
+#scoreV {
   color: white;
-  font-family: 'avenir', sans-serif;
+  font-family: "avenir", sans-serif;
   position: absolute;
   right: 300px;
   top: 15%;
@@ -25,9 +25,9 @@ body {
   font-size: 30rem;
 }
 
-#vs{
+#vs {
   color: white;
-  font-family: 'avenir', sans-serif;
+  font-family: "avenir", sans-serif;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -38,7 +38,7 @@ body {
 
 #pham {
   color: whitesmoke;
-  font-family: 'avenir', sans-serif;
+  font-family: "avenir", sans-serif;
   position: absolute;
   top: 2%;
   left: 50%;
@@ -49,7 +49,7 @@ body {
 }
 #pong {
   color: whitesmoke;
-  font-family: 'avenir', sans-serif;
+  font-family: "avenir", sans-serif;
   position: absolute;
   top: 4%;
   left: 50%;
@@ -60,7 +60,7 @@ body {
 }
 #game {
   color: white;
-  font-family: 'avenir', sans-serif;
+  font-family: "avenir", sans-serif;
   position: absolute;
   top: 11%;
   left: 50%;
@@ -69,5 +69,3 @@ body {
   font-weight: 100;
   opacity: 0.8;
 }
-
-

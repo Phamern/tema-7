@@ -5,7 +5,6 @@ function setup() {
 }
 
 function draw() {
-
   //Smiley-hodet
   strokeWeight(10);
   stroke("darkorange");
@@ -19,23 +18,19 @@ function draw() {
 
   //Smiley-venstreøyet
   //Blunker når man klikker
-  if(mouseIsPressed) {
-  stroke("red");
-  strokeWeight(12)
-  line(100, 120, 130, 120);
-}
-  else {
+  if (mouseIsPressed) {
+    stroke("red");
+    strokeWeight(12);
+    line(100, 120, 130, 120);
+  } else {
     noStroke();
     fill("red");
     ellipse(110, 120, 30);
-}
-  
-
+  }
 
   //Smiley-munn
   stroke("red");
   strokeWeight(12);
   noFill();
-  arc(150, 160, 130, 100, 0, PI, OPEN); 
-
+  arc(150, 160, 130, 100, 0, PI, OPEN);
 }

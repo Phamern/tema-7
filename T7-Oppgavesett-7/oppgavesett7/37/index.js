@@ -10,35 +10,31 @@ const midtStrek = {
   y1: 50,
   x2: 250,
   y2: 250
-}
+};
 
 tegning.push(midtStrek);
 
 const y = 20;
 
-for(let i=0; i<5; i++){
+for (let i = 0; i < 5; i++) {
   const strek1 = {
     x1: 250,
-    y1: 50 + (y * i),  
+    y1: 50 + y * i,
     x2: 200,
     y2: y * i + 80
-
-  }
+  };
   tegning.push(strek1);
 }
 
-for(let i=0; i<5; i++){
+for (let i = 0; i < 5; i++) {
   const strek2 = {
     x1: 250,
-    y1: 50 + (y * i),
+    y1: 50 + y * i,
     x2: 300,
     y2: y * i + 80
-
-  }
+  };
   tegning.push(strek2);
 }
-
-
 
 /*const strek1 = {
   x1: 250,
@@ -107,18 +103,11 @@ tegning.push(strek9);
 
 console.log(tegning);*/
 
-
-
 function draw() {
-
   strokeWeight(5);
 
-  for(const strek of tegning) {
+  for (const strek of tegning) {
     console.log(strek);
-     line(strek.x1, strek.y1, strek.x2, strek.y2); 
-
+    line(strek.x1, strek.y1, strek.x2, strek.y2);
   }
 }
-
-
-
