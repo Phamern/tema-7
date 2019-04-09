@@ -37,10 +37,10 @@ imgPile.onmouseout = () => {
   }
 };*/
 
-const alle = document.querySelectorAll("#imgPile img");
+const all = document.querySelectorAll("#imgPile img");
 
 imgPile.onmouseover = () => {
-  for(const img of alle) {
+  for(const img of all) {
     img.classList.add("move");
   }
 }

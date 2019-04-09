@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Oppgave 3.5-2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <input type="color" id="inpSkriftFarge">
+  <input type="number" id="inpSkriftStorrelse">
+  <input type="number" id="inpSkriftTykkelse">
+  <input type="color" id="inpBackColor">
+  <p id="tekst">THIS IS A TEST</p>
+
+  <script>
+  
+    const inpSkriftFarge = document.querySelector("#inpSkriftFarge");
+    const inpSkriftStorrelse = document.querySelector("#inpSkriftStorrelse");
+    const inpSkriftTykkelse = document.querySelector("#inpSkriftTykkelse");
+    const inpBackColor = document.querySelector("#inpBackColor");
+    const tekst = document.querySelector("#tekst");
+
+    function endreSkrift() {
+      tekst.style.color = inpSkriftFarge.value;
+      tekst.style.fontSize = inpSkriftStorrelse.value + "px";
+      tekst.style.fontWeight = inpSkriftTykkelse.value;
+      //document.body.style.transform =`rotate(${inpSkriftTykkelse.value}deg)`;
+    }
+    inpSkriftFarge.addEventListener("input", endreSkrift);
+    inpSkriftStorrelse.addEventListener("input", endreSkrift);
+    inpSkriftTykkelse.addEventListener("input", endreSkrift);
+    
+
+    function endreBakgrunn() {
+      document.body.style.backgroundColor = inpBackColor.value;
+      
+    }
+
+    inpBackColor.addEventListener("input", endreBakgrunn);
+
+  </script>
+  
+</body>
+</html>

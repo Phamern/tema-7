@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Functions</title>
+</head>
+
+<body>
+
+  <script>
+    function moveForward() {
+
+      document.write("Går fremover");
+      document.write(innerWidth);
+    }
+
+    moveForward();
+
+    function turnLeft(grader) {
+      document.write(`<h1> Jeg vender meg ${grader} grader til venstre</h1>`);
+    }
+
+    turnLeft(60);
+    turnLeft(120);
+
+    function sendMelding(avsender, mottaker, tekst) {
+
+      const melding = `
+          <h1> Hei ${mottaker}</h1>
+          <p>${tekst}</p>
+          <footer>Hilsen ${avsender}</footer>
+          `;
+      document.write(melding);
+
+    }
+
+sendMelding("Bill Gates", "Erna", "Hvordan går det?");
+
+// En funksjon kan ha en input
+// En funksjon kan også ha en output
+
+function leggSammen(tall1, tall2) {
+
+  const sum = tall1 + tall2;
+  return sum;
+  //return tall1 + tall2;
+
+}
+
+const svar = leggSammen(8, 20);
+
+alert(`Svaret er ${svar}`);
+
+
+
+  </script>
+
+</body>
+
+</html>

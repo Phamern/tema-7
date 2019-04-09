@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Oppgave 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p>Oppgave 1.4</p>
+ <input id="inpNavn" type="text" placeholder="Hva er ditt fulle navn?">
+ <p id="oupNavn"></p>
+ <p id="info"></p>
+
+ <div id="box1">Oppgave 2.1</div>
+ <div id="box2">Oppgave 2.2</div>
+ <input type="number" id="inpXpos" placeholder="x position">
+ <input type="number" id="inpYpos" placeholder="y position">
+
+<div id="oppgave2"> 
+  
+  <p>Oppgave 2.5-3</p>
+ <ul id="matretter">
+<li>Fiskeboller</li>
+
+</ul>
+
+<input type="text" id="mat1" placeholder="Matrett1">
+<input type="text" id="mat2" placeholder="Matrett2">
+<input type="text" id="mat3" placeholder="Matrett3">
+<button id="bt">Legg til</button>
+</div>
+<script>
+//Oppgave 1.4-1
+const inpNavn = document.querySelector("#inpNavn");
+const oupNavn = document.querySelector("#oupNavn");
+const info = document.querySelector("#info");
+
+function fulleNavn(){
+
+oupNavn.innerText = inpNavn.value;
+
+}
+
+inpNavn.addEventListener("input", fulleNavn);
+
+//Oppgave 1.4-2
+const svar = leggSammen(5, 10);
+function leggSammen(arektangel, brektangel) {
+  const sum = arektangel * brektangel;
+  return sum;
+}
+
+
+
+info.innerHTML += `<div>Oppgave 1.2: Arealet er ${svar}</div>`;
+
+//Oppgave 2.5-1
+const box1 = document.getElementById("box1");
+
+function endreBox(c, w, h,) {
+  box1.style.backgroundColor = c;  
+  box1.style.width = w + "px";  
+  box1.style.height = h + "px";
+}
+//Settes hvis man ønsker at brukeren skal sette verdiene
+//const farge = prompt("Hvilken farge");
+//const width = prompt("Bredde");
+//const height = prompt("Høyde");
+
+endreBox("Orange", "100", "100");
+
+//Oppgave 2.5-2 ogOppgave 3.5-1
+const box2 = document.getElementById("box2");
+const inpXpos= document.getElementById("inpXpos");
+const inpYpos= document.getElementById("inpYpos");
+
+
+function xypos(x, y) {
+  box2.style.left = x + "px";
+  box2.style.top = y + "px";
+}
+
+const xpos = prompt("X position");
+const ypos = prompt("Y position");
+
+xypos (xpos, ypos);
+
+
+function posisjoner() {
+  box2.style.left = inpXpos.value + "px";
+  box2.style.top = inpYpos.value + "px";
+}
+
+inpXpos.addEventListener("input", posisjoner);
+inpYpos.addEventListener("input", posisjoner);
+
+
+//Oppgave 2.5-3
+const matretter = document.querySelector("#matretter");
+const mat1= document.querySelector("#mat1");
+const mat2 = document.querySelector("#mat2");
+const mat3 = document.querySelector("#mat3");
+const bt = document.querySelector("#bt");
+
+function skrivMat(){
+
+  matretter.innerHTML = "<li>Fiskeboller</li> ";
+
+  matretter.innerHTML += `<li>${mat1.value}</li>`;
+  matretter.innerHTML += `<li>${mat2.value}</li>`;
+  matretter.innerHTML += `<li>${mat3.value}</li>`;
+
+}
+
+bt.addEventListener("click", skrivMat);
+
+</script>
+  
+</body>
+</html>

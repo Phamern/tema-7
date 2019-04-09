@@ -1,0 +1,33 @@
+:root {
+
+  --font: 'avenir', sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  text-align: center; 
+}
+
+#box2 {
+background-color: blue;
+position: absolute;
+width: 100px;
+height: 100px;
+transition: 1s;
+left: 500px;
+top: 300px;
+}
+
+#liste {
+  top: 450px;
+  position: absolute;
+}
+
+button {
+
+  background-color: yellow;
+}
+
+#oppgave2 p {
+  margin-top: 200px;
+}
