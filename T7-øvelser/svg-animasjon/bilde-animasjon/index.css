@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #2d2d2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#bildestriper {
+  border: 1px solid white;
+  width: 300px;
+  height: 600px;
+  display: grid;
+  /*grid-template-rows: repeat(3, 1fr);*/
+  perspective: 300px;
+}
+
+#bildestriper div {
+  /*Reagerer med perspective
+  transform: rotateX(60deg) rotateY(30deg);*/
+  background-image: url("./img/movements.jpg");
+  animation: fallDown 3s both;
+}
+
+/*
+#bildestriper div:nth-child(2) {
+  background-position: 0 -200px;
+}
+#bildestriper div:nth-child(3) {
+  background-position: 0 -400px;
+}*/
+
+@keyframes fallDown {
+  from {
+    transform: rotateX(-670deg) rotateY(30deg) translateY(-100px);
+  }
+}

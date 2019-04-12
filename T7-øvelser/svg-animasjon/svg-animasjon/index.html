@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SVG-animasjon</title>
+    <style>
+      body {
+        
+      }
+      svg {
+        background-color: orange;
+      }
+      #linje {
+        animation: tegning 8s both;
+        
+      }
+
+      @keyframes tegning {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      #animasjon {
+        width: 800px;
+        height: 400px;
+        position: relative;
+      }
+
+      #tiger {
+        font-size: 2rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform:rotate(90deg);
+        offset-distance: 0%;
+        offset-path: path("M241,44 C365,-29 387,124 503,44 C619,-36 935,-1 690,122 C445,245 693,349 467,283 C241,217 225,217 233,333 C241,449 -150,36.2212119 67,109 C284,181.778788 117,117 241,44 Z");
+        animation: walk 8s both;
+      }
+
+      @keyframes walk {
+        to {
+          offset-distance: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="animasjon">
+                
+      <svg width="800" height="400">
+          <path d="M241,44 C365,-29 387,124 503,44 C619,-36 935,-1 690,122 C445,245 693,349 467,283 C241,217 225,217 233,333 C241,449 -150,36.2212119 67,109 C284,181.778788 117,117 241,44 Z"
+           id="linje" 
+           stroke="white"
+           fill="transparent"
+           ></path>
+        <!--<path
+          id="linje"
+          stroke="white"
+          stroke-width="2"
+          fill="transparent"
+          d="M50, 50 L750,50 L750,350 L50,350 Z"
+        ></path>-->
+      </svg>
+      <div id="tiger">🐅</div>
+    </div>
+
+    <script>
+      //finner lengden av linjen slik at man ikke må prøve seg frem.
+      const linje = document.querySelector("#linje");
+      const lengde = linje.getTotalLength();
+      linje.style.strokeDasharray = lengde;
+      linje.style.strokeDashoffset = lengde;
+      console.log(lengde);
+    </script>
+  </body>
+</html>
